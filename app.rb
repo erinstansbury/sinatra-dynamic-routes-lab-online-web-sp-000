@@ -7,7 +7,7 @@ class App < Sinatra::Base
   "#{rev}"
  end
  
- get '/square/:number'
+ get '/square/:number' do
   num = :number.to_i
   "#{num*num}"
  end
