@@ -6,5 +6,7 @@ class App < Sinatra::Base
   rev = @name.reverse
   "#{rev}"
  end
+ 
+ get ''
 
 end
