@@ -39,7 +39,11 @@ class App < Sinatra::Base
     if operation == 'add'
       "#{num1+num2}.to_s"
     elsif operation == 'subtract'
+      "#{num1-num2}.to_s"
     elsif operation == 'multiply'
+      "#{num1*num2}.to_s"
+    elsif operation == 'divide'
+      "#{num1/num2}.to_s"
   end
   
 
