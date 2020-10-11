@@ -31,5 +31,14 @@ class App < Sinatra::Base
 
 		"#{word1} #{word2} #{word3} #{word4} #{word5}."
   end
+  
+  get '/:operation/:number1/:number2' go 
+    num1 = params[:number1].to_i
+    num2 = params[:number2].to_i
+    operation = params{:operation]
+    if operation == 'add'
+      "#{num1+num2}.to_s"
+  end
+  
 
 end
