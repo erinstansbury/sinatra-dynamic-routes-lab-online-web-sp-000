@@ -44,6 +44,7 @@ class App < Sinatra::Base
       "#{num1*num2}.to_s"
     elsif operation == 'divide'
       "#{num1/num2}.to_s"
+    end
   end
   
 
